@@ -11,5 +11,29 @@
 
     <artifactId>gmall-api</artifactId>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.xx.gmall</groupId>
+            <artifactId>gmall-common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- 引入dubbo场景启动器 -->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
+        <!--为了防止工程mp的注解报错问题-->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+            <version>3.1.0</version>
+            <!--依赖是否传递,因为后面的服务需要，所以传递-->
+            <!-- <optional>true</optional>-->
+        </dependency>
+
+    </dependencies>
+
 
 </project>
